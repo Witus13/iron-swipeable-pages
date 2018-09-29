@@ -8,18 +8,18 @@
 
 ## Install
 
-Install the component using [Bower](http://bower.io/):
+Install the component using NPM:
 
 ```sh
-$ bower install iron-swipeable-pages --save
+$ npm install iron-swipeable-pages --save
 ```
 
 ## Usage
 
 Import Custom Element:
 
-```html
-<link rel="import" href="bower_components/iron-swipeable-pages/iron-swipeable-pages.html">
+```js
+import 'iron-swipeable-pages/iron-swipeable-pages.js';
 ```
 
 And then use it:
@@ -59,3 +59,5 @@ If you have any questions, you can find me on the [Polymer Slack Channel](https:
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+For best development experience, it's recommended to have **[Polymer CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli)** installed. It provides functionality such as serving element docs locally and testing framework.
