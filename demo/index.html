@@ -7,17 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 
-    <link rel="import" href="../../iron-flex-layout/iron-flex-layout.html">
-    <link rel="import" href="../../paper-tabs/paper-tab.html">
-    <link rel="import" href="../../paper-tabs/paper-tabs.html">
-    <link rel="import" href="../../paper-styles/typography.html">
-    <link rel="import" href="../../paper-styles/color.html">
+    <script type="module">
+      import '@polymer/iron-flex-layout/iron-flex-layout';
+      import '@polymer/paper-tabs/paper-tabs';
+      import '@polymer/paper-tabs/paper-tab';
+      import '@polymer/paper-styles/typography';
+      import '@polymer/paper-styles/color';
+      import '@polymer/polymer/lib/elements/dom-bind';
+    </script>
 
-    <link rel="import" href="../iron-swipeable-pages.html">
+    <script type="module" src="../iron-swipeable-pages.js"></script>
 
-    <style is="custom-style">
+    <custom-style>
+    <style>
       body {
         @apply --layout-fullbleed;
         @apply --layout-vertical;
@@ -77,57 +81,60 @@
       }
 
     </style>
+    </custom-style>
   </head>
   <body>
-    <template is="dom-bind">
-
+    <dom-bind>
+      <template>
+      
       <div id="toolbar1">
-        <button on-click="_onPrevClick1">&lt;&lt;</button>
-        Cycling by swipe enabled
-        <button on-click="_onNextClick1">&gt;&gt;</button>
+      <button on-click="_onPrevClick1">&lt;&lt;</button>
+      Cycling by swipe enabled
+      <button on-click="_onNextClick1">&gt;&gt;</button>
       </div>
-
+      
       <iron-swipeable-pages on-selected-changed="_onSelectedChanged" selected="{{selected1}}" threshold="0.2">
-        <div class="page">Page 1</div>
-        <div class="page">Page 2</div>
-        <div class="page">Page 3</div>
-        <div class="page">Page 4</div>
-        <div class="page">Page 5</div>
+      <div class="page">Page 1</div>
+      <div class="page">Page 2</div>
+      <div class="page">Page 3</div>
+      <div class="page">Page 4</div>
+      <div class="page">Page 5</div>
       </iron-swipeable-pages>
-
+      
       <div id="toolbar2">
-        <button on-click="_onPrevClick2">&lt;&lt;</button>
-        Cycling by swipe disabled (still working by selection)
-        <button on-click="_onNextClick2">&gt;&gt;</button>
+      <button on-click="_onPrevClick2">&lt;&lt;</button>
+      Cycling by swipe disabled (still working by selection)
+      <button on-click="_onNextClick2">&gt;&gt;</button>
       </div>
-
+      
       <iron-swipeable-pages on-selected-changed="_onSelectedChanged" selected="{{selected2}}" threshold="0.2" no-cycle>
-        <div class="page">Page 1</div>
-        <div class="page">Page 2</div>
-        <div class="page">Page 3</div>
-        <div class="page">Page 4</div>
-        <div class="page">Page 5</div>
+      <div class="page">Page 1</div>
+      <div class="page">Page 2</div>
+      <div class="page">Page 3</div>
+      <div class="page">Page 4</div>
+      <div class="page">Page 5</div>
       </iron-swipeable-pages>
-
+      
       <paper-tabs selected="{{selected3}}">
-        <paper-tab>Tab 1</paper-tab>
-        <paper-tab>Tab 2</paper-tab>
-        <paper-tab>Tab 3</paper-tab>
-        <paper-tab>Tab 4</paper-tab>
-        <paper-tab>Tab 5</paper-tab>
+      <paper-tab>Tab 1</paper-tab>
+      <paper-tab>Tab 2</paper-tab>
+      <paper-tab>Tab 3</paper-tab>
+      <paper-tab>Tab 4</paper-tab>
+      <paper-tab>Tab 5</paper-tab>
       </paper-tabs>
       <iron-swipeable-pages on-selected-changed="_onSelectedChanged" selected="{{selected3}}" threshold="0.2" show-arrow>
-        <div class="page">Page 1</div>
-        <div class="page">Page 2</div>
-        <div class="page">Page 3</div>
-        <div class="page">Page 4</div>
-        <div class="page">Page 5</div>
+      <div class="page">Page 1</div>
+      <div class="page">Page 2</div>
+      <div class="page">Page 3</div>
+      <div class="page">Page 4</div>
+      <div class="page">Page 5</div>
       </iron-swipeable-pages>
-
-    </template>
+      
+      </template>
+    </dom-bind>
     <script>
 
-      var scope = document.querySelector('template[is="dom-bind"]');
+      var scope = document.querySelector('dom-bind');
       scope.selected1 = 0;
       scope.selected2 = 0;
       scope.selected3 = 0;
