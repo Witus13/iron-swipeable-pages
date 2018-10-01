@@ -1,10 +1,13 @@
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/GeoloeG/iron-swipeable-pages)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/@myfrom/iron-swipeable-pages)
+[![Build Status](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://travis-ci.org/myfrom/iron-swipeable-pages)
+[![npm](https://img.shields.io/npm/v/@myfrom/iron-swipeable-pages.svg?style=flat-square)](https://www.npmjs.com/package/@myfrom/iron-swipeable-pages)
+
+**This is a fork** because the [original element](https://github.com/GeoloeG/iron-swipeable-pages) seems to no longer be maintained for newer Polymer versions.
+
 
 # `<iron-swipeable-pages>`
 
-## Descripton
-
-`<iron-swipeable-pages>` manages a set of pages and provides the ability to switch between them by swiping gesture.
+`<iron-swipeable-pages>` is a Polymer 3 element that manages a set of pages and provides the ability to switch between them by swiping gesture.
 
 ## Install
 
@@ -46,18 +49,25 @@ See the [Documentation](https://geoloeg.github.io/iron-swipeable-pages/) for mor
 
 ## More Demos
 
-[https://geoloeg.github.io/iron-swipeable-pages/](https://geoloeg.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/)
+ - [Declarative](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/index.html)
+
+ - [Conditional with dom-if's](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/conditional.html)
+
+ - [Disabled](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/disabled.html)
+
+ - [Alongside <paper-drawer-panel>](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/drawerpanel.html) *(Might not work due to deprecation of paper-drawer-panel)*
+
+ - [Mobile](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/mobile.html)
+
+ - [With routing](https://myfrom.github.io/iron-swipeable-pages/components/iron-swipeable-pages/demo/routing.html)
+
 
 ## Discussing
 
-If you have any questions, you can find me on the [Polymer Slack Channel](https://polymer.slack.com/), or just raise an Issue.
+You can also find the original creator on the [Polymer Slack Channel](https://polymer.slack.com/) under nickname of *@MeTaNoV*
 
 ## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+Please submit your PRs to `myfrom` branch if you have any new feature ideas.
 
 For best development experience, it's recommended to have **[Polymer CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli)** installed. It provides functionality such as serving element docs locally and testing framework.

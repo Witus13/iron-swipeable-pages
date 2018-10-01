@@ -5,19 +5,12 @@
   "keywords": [
     "web-component",
     "web-components",
-    "web",
-    "component",
-    "components",
-    "custom",
-    "element",
     "polymer",
+    "polymer-element",
     "iron",
-    "page",
     "pages",
     "swipe",
-    "swipeable",
-    "content",
-    "mobile"
+    "swipeable"
   ],
   "main": "iron-swipeable-pages.js",
   "scripts": {
@@ -26,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoloeG/iron-swipeable-pages.git"
+    "url": "git+https://github.com/myfrom/iron-swipeable-pages.git"
   },
   "author": "Pascal Gula aka MeTaNoV <pascal.gula@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GeoloeG/iron-swipeable-pages/issues"
+    "url": "https://github.com/myfrom/iron-swipeable-pages/issues"
   },
-  "homepage": "https://github.com/GeoloeG/iron-swipeable-pagesblob#readme",
+  "homepage": "https://www.webcomponents.org/element/myfrom/iron-swipeable-pages",
   "devDependencies": {
     "@polymer/app-route": "^3.0.2",
     "@polymer/iron-component-page": "^4.0.1",
